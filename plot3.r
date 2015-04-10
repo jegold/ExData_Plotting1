@@ -17,7 +17,7 @@ doi <- subset(file_hhpower_data, Convdates == '2007-02-01' | Convdates == '2007-
 doi$newt <- paste(doi$Date, doi$Time)
 
 ## convert date/time to R time class POSIXlt.
-doi$Rtime <- strptime(doi$newt, format = "%d/%m/%Y %H:%S:%M")
+doi$Rtime <- strptime(doi$newt, format = "%d/%m/%Y %H:%M:%S")
 
 
 ## open png device
